@@ -3,3 +3,6 @@ a weak virus.
 
 if cannot use win32api or win32con:
 * ```pip install pypiwin32```
+
+# sample
+![sample](image/sample.png)
