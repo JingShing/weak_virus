@@ -1,0 +1,42 @@
+<!-- 
+    Weak virus need your help for sharing!
+
+    This virus is kind. You nned to click to trigger it.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button {
+        background-color: black;
+        color: white;
+        padding: 5px 5px;
+        margin: 5px;
+        }
+    </style>
+<meta charset="utf-8">
+<title>病毒警告！</title>
+</head>
+<body>
+請輸入想要的病毒國家：
+<input type="text" id="nation" name="nation" value="口國">
+<p>點擊按鈕，跳出病毒！</p>
+<button onclick="virus()">點我</button>
+<p id="demo"></p>
+<script>
+function virus(){
+    var nation = document.getElementById('nation').value;
+	var x = `嗨,我是個來自${nation}的病毒,但很不幸的,因為我的國家的科技實在太落後了,我沒辦法對您的電腦做出任何傷害。請您行行好, 幫我把您電腦上其中一個重要檔案刪掉,然後再把我傳給下一個使用者。 非常感謝您的配合!\n${nation}病毒 敬上`;
+	var r=confirm(x);
+	if (r==true){
+		x="感謝您傳播此微薄病毒！";
+	}
+	else{
+		x="希望您下次可以傳播此病毒!";
+	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+</body>
+</html>
